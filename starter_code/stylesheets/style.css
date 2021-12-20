@@ -5,3 +5,230 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+:root {
+    --color-grey-nav: #5b5e6d;
+    --color-grey-light: #F4F3F4;
+    --color-grey: #5b5e6d;
+    --color-grey-dark: #2C303F;
+    --color-purple: #192592;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    height: 4vh;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    border-bottom: 1px solid var(--color-grey-nav);
+    position:fixed;
+    width: 100vw;
+    background: var(--color-white);
+}
+
+nav img {
+    height: 7vh;
+    width: auto;
+}
+
+nav ul {
+    display: none;
+}
+
+.fa-bars {
+    color: var(--color-grey-nav);
+    margin-right: 2em;
+}
+
+header {
+    padding: 0 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 5em;
+}
+
+header h1 {
+    width: 300px;
+    font-size: 2.5em;
+    align-self:flex-start;
+}
+
+header p {
+    color: var(--color-grey);
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+header input {
+    width: 92%;
+    font-size: 1.25em;
+    line-height: 2em;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: 1px solid var(--color-grey);
+    padding-left: 1em;
+}
+
+header button {
+    color: var(--color-white);
+    background: var(--color-purple);
+    width: 100%;
+    padding: 1.25em;
+    margin: 1.5em 0 0;
+    border: none;
+    border-radius: 5px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-bottom: 1px solid rgba(91, 94, 109, 0.1);
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: var(--color-grey-light);
+    padding: 0 2em;
+    text-align: center;
+}
+
+.company h2 {
+    margin: 2em 0 0;
+    font-size: 1.75em;
+}
+
+.company p {
+    color: var(--color-grey);
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+.company button {
+    color: var(--color-purple);
+    background: var(--color-white);
+    border: 1px solid var(--color-purple);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1.25em;
+    font-weight: 800;
+    margin-bottom: 5em;
+}
+
+.company img {
+    width: 100%;
+    margin-bottom: 3.5em;
+    padding-bottom: 3.5em;
+}
+
+.company img:not(:last-child) {
+    border-bottom: 1px solid rgba(91, 94, 109, 0.1);
+}
+
+.sign-up {
+    text-align: center;
+    color: var(--color-grey);
+    padding: 0 2em;
+}
+
+.sign-up p:first-child {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 2em 0 0;
+}
+
+.sign-up p:nth-child(2) {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.sign-up a {
+    color: var(--color-purple);
+}
+
+.sign-up input {
+    width: 91%;
+    font-size: 1.25em;
+    line-height: 2em;
+    margin: 1em 0;
+    border-radius: 5px;
+    border: 1px solid var(--color-grey);
+    padding-left: 1em;
+    padding-right: -1em;
+}
+
+.sign-up button {
+    color: var(--color-white);
+    background: var(--color-purple);
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 1.25em;
+    margin-bottom: 3em;
+}
+
+.sitemap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.sitemap img {
+    width: 150px;
+    scale: 1;
+    align-self: flex-start;
+}
+
+.sitemap > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.sitemap > div ul {
+    width: 100px;   
+}
+
+.sitemap > div ul:nth-child(2),
+.sitemap > div ul:nth-child(4) {
+    margin-left: 2em;
+}
+
+.sitemap > div ul li {
+    color: var(--color-grey);
+    line-height: 2.5em;
+    font-size: 1.25em;
+}
+
+.sitemap > div ul li:first-child {
+    font-weight: 700;
+}
+
+footer ul li {
+    list-style: none;
+}
