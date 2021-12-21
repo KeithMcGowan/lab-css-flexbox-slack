@@ -30,7 +30,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
-    border-bottom: 1px solid var(--color-grey-nav);
+    border-bottom: 1px solid rgba(91, 94, 109, 0.3);
     position:fixed;
     width: 100vw;
     background: var(--color-white);
@@ -139,8 +139,7 @@ main {
 
 .company img {
     width: 100%;
-    margin-bottom: 3.5em;
-    padding-bottom: 3.5em;
+    padding: 3.5em 0;
 }
 
 .company img:not(:last-child) {
@@ -189,6 +188,10 @@ main {
     margin-bottom: 3em;
 }
 
+footer ul li {
+    list-style: none;
+}
+
 .sitemap {
     display: flex;
     justify-content: center;
@@ -229,6 +232,154 @@ main {
     font-weight: 700;
 }
 
-footer ul li {
-    list-style: none;
+.sub-footer {
+    background: var(--color-grey-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 1em;
+}
+
+.sub-footer ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    width: 100%;
+    padding: 0;
+    font-size: 1.25em;
+    color: var(--color-grey);
+    font-weight: 700;
+}
+
+.language {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    color: var(--color-grey);
+}
+
+.language img {
+    width: 1em;
+    height: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    color: var(--color-grey);
+    padding: 0 1em;
+}
+
+@media (min-width: 767px) {
+    header h1 {
+        width: 100%;
+        font-size: 4em;
+        margin-bottom: .25em;
+    }
+
+    header p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    header > div {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    header input {
+        margin-right: 1em;
+        max-width: 330px;
+    }
+
+    header button {
+        max-width: 150px;
+    }
+
+    .sign-in {
+        align-self: flex-start;
+    }
+
+    .company h2 {
+        font-size: 2em;
+    }
+
+    .company button {
+        max-width: 200px;
+    }
+
+    .company img {
+        width: 35%;
+        height: 70px;
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+
+    .company img:nth-child(1), 
+    .company img:nth-child(3), 
+    .company img:nth-child(5) {
+        border-right: 1px solid rgba(91, 94, 109, 0.1);
+    }
+
+    .company img:nth-child(5) {
+        border-bottom: none;
+    }
+
+    .company img:nth-child(5),
+    .company img:nth-child(6) {
+        margin-bottom: 3.5em;
+    }
+
+    .company-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .sign-up {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        padding: .75em 0.75em 2em;
+    }
+
+    .email {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row;
+        align-self: flex-end;
+        vertical-align: middle;
+    }
+
+    .email button {
+        margin: auto 1.5em auto 1em;
+    }
+
+    .sitemap {
+        flex-flow: row nowrap;
+        padding-right: 3em;
+    }
+
+    .sitemap > div {
+        justify-content: space-evenly;
+    }
+
+    .sitemap > div ul {
+        margin-top: 16px;
+    }
+
+    .sitemap > div ul:nth-child(2),
+    .sitemap > div ul:nth-child(4) {
+        margin-left: 0;
+    }
 }
